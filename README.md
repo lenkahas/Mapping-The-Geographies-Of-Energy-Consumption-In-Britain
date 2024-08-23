@@ -5,6 +5,6 @@ This repository provides a reproducible and replicable code for the project “M
 The analysis is built on open-access secondary data sets, and it's completely reproducible with the given code. Nevertheless, due to the GitHub limitation on file sizes, the user is required to download the data sets locally. 
 
 * Energy Performance Certificates (EPCs); https://epc.opendatacommunities.org/
-* Energy consumption data; tbc
+* Energy consumption data; https://www.gov.uk/government/statistics/postcode-level-electricity-statistic
 
 For any enquires or questions, please email Lenka Hasova; lenka.hasova@bristol.ac.uk
