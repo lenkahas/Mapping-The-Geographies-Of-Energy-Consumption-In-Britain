@@ -8,3 +8,5 @@ The analysis is built on open-access secondary data sets, and it's completely re
 * Energy consumption data; https://www.gov.uk/government/statistics/postcode-level-electricity-statistic
 
 For any enquires or questions, please email Lenka Hasova; lenka.hasova@bristol.ac.uk
+
+November 2024
