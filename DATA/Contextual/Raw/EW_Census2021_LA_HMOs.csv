@@ -1,0 +1,994 @@
+Lower tier local authorities Code,Lower tier local authorities,Households of multiple occupancy (HMO) (3 categories) Code,Households of multiple occupancy (HMO) (3 categories),Observation
+E06000001,Hartlepool,-8,Does not apply,44267
+E06000001,Hartlepool,1,Is a small HMO,35
+E06000001,Hartlepool,2,Is a large HMO,14
+E06000002,Middlesbrough,-8,Does not apply,63584
+E06000002,Middlesbrough,1,Is a small HMO,338
+E06000002,Middlesbrough,2,Is a large HMO,111
+E06000003,Redcar and Cleveland,-8,Does not apply,65523
+E06000003,Redcar and Cleveland,1,Is a small HMO,16
+E06000003,Redcar and Cleveland,2,Is a large HMO,4
+E06000004,Stockton-on-Tees,-8,Does not apply,88318
+E06000004,Stockton-on-Tees,1,Is a small HMO,105
+E06000004,Stockton-on-Tees,2,Is a large HMO,25
+E06000005,Darlington,-8,Does not apply,52073
+E06000005,Darlington,1,Is a small HMO,50
+E06000005,Darlington,2,Is a large HMO,5
+E06000006,Halton,-8,Does not apply,58305
+E06000006,Halton,1,Is a small HMO,31
+E06000006,Halton,2,Is a large HMO,9
+E06000007,Warrington,-8,Does not apply,94083
+E06000007,Warrington,1,Is a small HMO,97
+E06000007,Warrington,2,Is a large HMO,25
+E06000008,Blackburn with Darwen,-8,Does not apply,62203
+E06000008,Blackburn with Darwen,1,Is a small HMO,25
+E06000008,Blackburn with Darwen,2,Is a large HMO,4
+E06000009,Blackpool,-8,Does not apply,72555
+E06000009,Blackpool,1,Is a small HMO,83
+E06000009,Blackpool,2,Is a large HMO,14
+E06000010,Kingston upon Hull,-8,Does not apply,122008
+E06000010,Kingston upon Hull,1,Is a small HMO,628
+E06000010,Kingston upon Hull,2,Is a large HMO,290
+E06000011,East Riding of Yorkshire,-8,Does not apply,173224
+E06000011,East Riding of Yorkshire,1,Is a small HMO,63
+E06000011,East Riding of Yorkshire,2,Is a large HMO,22
+E06000012,North East Lincolnshire,-8,Does not apply,73882
+E06000012,North East Lincolnshire,1,Is a small HMO,67
+E06000012,North East Lincolnshire,2,Is a large HMO,15
+E06000013,North Lincolnshire,-8,Does not apply,76196
+E06000013,North Lincolnshire,1,Is a small HMO,76
+E06000013,North Lincolnshire,2,Is a large HMO,14
+E06000014,York,-8,Does not apply,88596
+E06000014,York,1,Is a small HMO,1354
+E06000014,York,2,Is a large HMO,694
+E06000015,Derby,-8,Does not apply,111077
+E06000015,Derby,1,Is a small HMO,611
+E06000015,Derby,2,Is a large HMO,238
+E06000016,Leicester,-8,Does not apply,132889
+E06000016,Leicester,1,Is a small HMO,1311
+E06000016,Leicester,2,Is a large HMO,459
+E06000017,Rutland,-8,Does not apply,17641
+E06000017,Rutland,1,Is a small HMO,7
+E06000017,Rutland,2,Is a large HMO,0
+E06000018,Nottingham,-8,Does not apply,130258
+E06000018,Nottingham,1,Is a small HMO,2066
+E06000018,Nottingham,2,Is a large HMO,2085
+E06000019,Herefordshire,-8,Does not apply,87999
+E06000019,Herefordshire,1,Is a small HMO,105
+E06000019,Herefordshire,2,Is a large HMO,45
+E06000020,Telford and Wrekin,-8,Does not apply,78964
+E06000020,Telford and Wrekin,1,Is a small HMO,282
+E06000020,Telford and Wrekin,2,Is a large HMO,92
+E06000021,Stoke-on-Trent,-8,Does not apply,116997
+E06000021,Stoke-on-Trent,1,Is a small HMO,451
+E06000021,Stoke-on-Trent,2,Is a large HMO,118
+E06000022,Bath and North East Somerset,-8,Does not apply,82034
+E06000022,Bath and North East Somerset,1,Is a small HMO,1315
+E06000022,Bath and North East Somerset,2,Is a large HMO,760
+E06000023,Bristol,-8,Does not apply,195911
+E06000023,Bristol,1,Is a small HMO,4776
+E06000023,Bristol,2,Is a large HMO,2128
+E06000024,North Somerset,-8,Does not apply,99753
+E06000024,North Somerset,1,Is a small HMO,136
+E06000024,North Somerset,2,Is a large HMO,38
+E06000025,South Gloucestershire,-8,Does not apply,121598
+E06000025,South Gloucestershire,1,Is a small HMO,612
+E06000025,South Gloucestershire,2,Is a large HMO,306
+E06000026,Plymouth,-8,Does not apply,120222
+E06000026,Plymouth,1,Is a small HMO,777
+E06000026,Plymouth,2,Is a large HMO,530
+E06000027,Torbay,-8,Does not apply,69185
+E06000027,Torbay,1,Is a small HMO,75
+E06000027,Torbay,2,Is a large HMO,48
+E06000030,Swindon,-8,Does not apply,99573
+E06000030,Swindon,1,Is a small HMO,231
+E06000030,Swindon,2,Is a large HMO,46
+E06000031,Peterborough,-8,Does not apply,87534
+E06000031,Peterborough,1,Is a small HMO,292
+E06000031,Peterborough,2,Is a large HMO,77
+E06000032,Luton,-8,Does not apply,81442
+E06000032,Luton,1,Is a small HMO,389
+E06000032,Luton,2,Is a large HMO,126
+E06000033,Southend-on-Sea,-8,Does not apply,82296
+E06000033,Southend-on-Sea,1,Is a small HMO,197
+E06000033,Southend-on-Sea,2,Is a large HMO,83
+E06000034,Thurrock,-8,Does not apply,69347
+E06000034,Thurrock,1,Is a small HMO,157
+E06000034,Thurrock,2,Is a large HMO,34
+E06000035,Medway,-8,Does not apply,117067
+E06000035,Medway,1,Is a small HMO,297
+E06000035,Medway,2,Is a large HMO,79
+E06000036,Bracknell Forest,-8,Does not apply,52354
+E06000036,Bracknell Forest,1,Is a small HMO,91
+E06000036,Bracknell Forest,2,Is a large HMO,50
+E06000037,West Berkshire,-8,Does not apply,69356
+E06000037,West Berkshire,1,Is a small HMO,91
+E06000037,West Berkshire,2,Is a large HMO,23
+E06000038,Reading,-8,Does not apply,70463
+E06000038,Reading,1,Is a small HMO,1059
+E06000038,Reading,2,Is a large HMO,574
+E06000039,Slough,-8,Does not apply,55802
+E06000039,Slough,1,Is a small HMO,248
+E06000039,Slough,2,Is a large HMO,88
+E06000040,Windsor and Maidenhead,-8,Does not apply,64937
+E06000040,Windsor and Maidenhead,1,Is a small HMO,175
+E06000040,Windsor and Maidenhead,2,Is a large HMO,53
+E06000041,Wokingham,-8,Does not apply,71305
+E06000041,Wokingham,1,Is a small HMO,163
+E06000041,Wokingham,2,Is a large HMO,53
+E06000042,Milton Keynes,-8,Does not apply,117108
+E06000042,Milton Keynes,1,Is a small HMO,336
+E06000042,Milton Keynes,2,Is a large HMO,72
+E06000043,Brighton and Hove,-8,Does not apply,126995
+E06000043,Brighton and Hove,1,Is a small HMO,2661
+E06000043,Brighton and Hove,2,Is a large HMO,1182
+E06000044,Portsmouth,-8,Does not apply,89240
+E06000044,Portsmouth,1,Is a small HMO,1269
+E06000044,Portsmouth,2,Is a large HMO,664
+E06000045,Southampton,-8,Does not apply,105569
+E06000045,Southampton,1,Is a small HMO,1581
+E06000045,Southampton,2,Is a large HMO,958
+E06000046,Isle of Wight,-8,Does not apply,73414
+E06000046,Isle of Wight,1,Is a small HMO,50
+E06000046,Isle of Wight,2,Is a large HMO,10
+E06000047,County Durham,-8,Does not apply,246731
+E06000047,County Durham,1,Is a small HMO,776
+E06000047,County Durham,2,Is a large HMO,597
+E06000049,Cheshire East,-8,Does not apply,183509
+E06000049,Cheshire East,1,Is a small HMO,230
+E06000049,Cheshire East,2,Is a large HMO,29
+E06000050,Cheshire West and Chester,-8,Does not apply,161617
+E06000050,Cheshire West and Chester,1,Is a small HMO,523
+E06000050,Cheshire West and Chester,2,Is a large HMO,217
+E06000051,Shropshire,-8,Does not apply,147498
+E06000051,Shropshire,1,Is a small HMO,153
+E06000051,Shropshire,2,Is a large HMO,106
+E06000052,Cornwall,-8,Does not apply,284306
+E06000052,Cornwall,1,Is a small HMO,896
+E06000052,Cornwall,2,Is a large HMO,334
+E06000053,Isles of Scilly,-8,Does not apply,1291
+E06000053,Isles of Scilly,1,Is a small HMO,7
+E06000053,Isles of Scilly,2,Is a large HMO,1
+E06000054,Wiltshire,-8,Does not apply,225785
+E06000054,Wiltshire,1,Is a small HMO,262
+E06000054,Wiltshire,2,Is a large HMO,58
+E06000055,Bedford,-8,Does not apply,77959
+E06000055,Bedford,1,Is a small HMO,179
+E06000055,Bedford,2,Is a large HMO,81
+E06000056,Central Bedfordshire,-8,Does not apply,125090
+E06000056,Central Bedfordshire,1,Is a small HMO,135
+E06000056,Central Bedfordshire,2,Is a large HMO,31
+E06000057,Northumberland,-8,Does not apply,159061
+E06000057,Northumberland,1,Is a small HMO,33
+E06000057,Northumberland,2,Is a large HMO,6
+E06000058,"Bournemouth, Christchurch and Poole",-8,Does not apply,184175
+E06000058,"Bournemouth, Christchurch and Poole",1,Is a small HMO,1314
+E06000058,"Bournemouth, Christchurch and Poole",2,Is a large HMO,732
+E06000059,Dorset,-8,Does not apply,183402
+E06000059,Dorset,1,Is a small HMO,119
+E06000059,Dorset,2,Is a large HMO,50
+E06000060,Buckinghamshire,-8,Does not apply,229965
+E06000060,Buckinghamshire,1,Is a small HMO,441
+E06000060,Buckinghamshire,2,Is a large HMO,123
+E06000061,North Northamptonshire,-8,Does not apply,154704
+E06000061,North Northamptonshire,1,Is a small HMO,256
+E06000061,North Northamptonshire,2,Is a large HMO,73
+E06000062,West Northamptonshire,-8,Does not apply,178855
+E06000062,West Northamptonshire,1,Is a small HMO,644
+E06000062,West Northamptonshire,2,Is a large HMO,248
+E07000008,Cambridge,-8,Does not apply,54168
+E07000008,Cambridge,1,Is a small HMO,1516
+E07000008,Cambridge,2,Is a large HMO,727
+E07000009,East Cambridgeshire,-8,Does not apply,38824
+E07000009,East Cambridgeshire,1,Is a small HMO,25
+E07000009,East Cambridgeshire,2,Is a large HMO,11
+E07000010,Fenland,-8,Does not apply,46231
+E07000010,Fenland,1,Is a small HMO,51
+E07000010,Fenland,2,Is a large HMO,13
+E07000011,Huntingdonshire,-8,Does not apply,79736
+E07000011,Huntingdonshire,1,Is a small HMO,94
+E07000011,Huntingdonshire,2,Is a large HMO,18
+E07000012,South Cambridgeshire,-8,Does not apply,69282
+E07000012,South Cambridgeshire,1,Is a small HMO,162
+E07000012,South Cambridgeshire,2,Is a large HMO,29
+E07000026,Allerdale,-8,Does not apply,48408
+E07000026,Allerdale,1,Is a small HMO,18
+E07000026,Allerdale,2,Is a large HMO,12
+E07000027,Barrow-in-Furness,-8,Does not apply,34140
+E07000027,Barrow-in-Furness,1,Is a small HMO,25
+E07000027,Barrow-in-Furness,2,Is a large HMO,7
+E07000028,Carlisle,-8,Does not apply,53680
+E07000028,Carlisle,1,Is a small HMO,92
+E07000028,Carlisle,2,Is a large HMO,32
+E07000029,Copeland,-8,Does not apply,34128
+E07000029,Copeland,1,Is a small HMO,14
+E07000029,Copeland,2,Is a large HMO,2
+E07000030,Eden,-8,Does not apply,28628
+E07000030,Eden,1,Is a small HMO,29
+E07000030,Eden,2,Is a large HMO,10
+E07000031,South Lakeland,-8,Does not apply,55728
+E07000031,South Lakeland,1,Is a small HMO,97
+E07000031,South Lakeland,2,Is a large HMO,31
+E07000032,Amber Valley,-8,Does not apply,58781
+E07000032,Amber Valley,1,Is a small HMO,23
+E07000032,Amber Valley,2,Is a large HMO,8
+E07000033,Bolsover,-8,Does not apply,37209
+E07000033,Bolsover,1,Is a small HMO,33
+E07000033,Bolsover,2,Is a large HMO,2
+E07000034,Chesterfield,-8,Does not apply,49938
+E07000034,Chesterfield,1,Is a small HMO,30
+E07000034,Chesterfield,2,Is a large HMO,15
+E07000035,Derbyshire Dales,-8,Does not apply,35434
+E07000035,Derbyshire Dales,1,Is a small HMO,16
+E07000035,Derbyshire Dales,2,Is a large HMO,0
+E07000036,Erewash,-8,Does not apply,52488
+E07000036,Erewash,1,Is a small HMO,32
+E07000036,Erewash,2,Is a large HMO,7
+E07000037,High Peak,-8,Does not apply,43122
+E07000037,High Peak,1,Is a small HMO,33
+E07000037,High Peak,2,Is a large HMO,7
+E07000038,North East Derbyshire,-8,Does not apply,47255
+E07000038,North East Derbyshire,1,Is a small HMO,15
+E07000038,North East Derbyshire,2,Is a large HMO,1
+E07000039,South Derbyshire,-8,Does not apply,47548
+E07000039,South Derbyshire,1,Is a small HMO,16
+E07000039,South Derbyshire,2,Is a large HMO,1
+E07000040,East Devon,-8,Does not apply,72372
+E07000040,East Devon,1,Is a small HMO,76
+E07000040,East Devon,2,Is a large HMO,26
+E07000041,Exeter,-8,Does not apply,53627
+E07000041,Exeter,1,Is a small HMO,1013
+E07000041,Exeter,2,Is a large HMO,987
+E07000042,Mid Devon,-8,Does not apply,37366
+E07000042,Mid Devon,1,Is a small HMO,25
+E07000042,Mid Devon,2,Is a large HMO,12
+E07000043,North Devon,-8,Does not apply,48827
+E07000043,North Devon,1,Is a small HMO,42
+E07000043,North Devon,2,Is a large HMO,26
+E07000044,South Hams,-8,Does not apply,46474
+E07000044,South Hams,1,Is a small HMO,36
+E07000044,South Hams,2,Is a large HMO,15
+E07000045,Teignbridge,-8,Does not apply,64076
+E07000045,Teignbridge,1,Is a small HMO,43
+E07000045,Teignbridge,2,Is a large HMO,15
+E07000046,Torridge,-8,Does not apply,33736
+E07000046,Torridge,1,Is a small HMO,31
+E07000046,Torridge,2,Is a large HMO,13
+E07000047,West Devon,-8,Does not apply,26400
+E07000047,West Devon,1,Is a small HMO,10
+E07000047,West Devon,2,Is a large HMO,12
+E07000061,Eastbourne,-8,Does not apply,49229
+E07000061,Eastbourne,1,Is a small HMO,173
+E07000061,Eastbourne,2,Is a large HMO,78
+E07000062,Hastings,-8,Does not apply,44109
+E07000062,Hastings,1,Is a small HMO,55
+E07000062,Hastings,2,Is a large HMO,24
+E07000063,Lewes,-8,Does not apply,46118
+E07000063,Lewes,1,Is a small HMO,40
+E07000063,Lewes,2,Is a large HMO,8
+E07000064,Rother,-8,Does not apply,46368
+E07000064,Rother,1,Is a small HMO,29
+E07000064,Rother,2,Is a large HMO,12
+E07000065,Wealden,-8,Does not apply,71996
+E07000065,Wealden,1,Is a small HMO,37
+E07000065,Wealden,2,Is a large HMO,15
+E07000066,Basildon,-8,Does not apply,79219
+E07000066,Basildon,1,Is a small HMO,103
+E07000066,Basildon,2,Is a large HMO,22
+E07000067,Braintree,-8,Does not apply,66733
+E07000067,Braintree,1,Is a small HMO,51
+E07000067,Braintree,2,Is a large HMO,17
+E07000068,Brentwood,-8,Does not apply,34213
+E07000068,Brentwood,1,Is a small HMO,20
+E07000068,Brentwood,2,Is a large HMO,9
+E07000069,Castle Point,-8,Does not apply,38754
+E07000069,Castle Point,1,Is a small HMO,12
+E07000069,Castle Point,2,Is a large HMO,8
+E07000070,Chelmsford,-8,Does not apply,78300
+E07000070,Chelmsford,1,Is a small HMO,183
+E07000070,Chelmsford,2,Is a large HMO,79
+E07000071,Colchester,-8,Does not apply,82468
+E07000071,Colchester,1,Is a small HMO,522
+E07000071,Colchester,2,Is a large HMO,175
+E07000072,Epping Forest,-8,Does not apply,57349
+E07000072,Epping Forest,1,Is a small HMO,79
+E07000072,Epping Forest,2,Is a large HMO,53
+E07000073,Harlow,-8,Does not apply,39189
+E07000073,Harlow,1,Is a small HMO,73
+E07000073,Harlow,2,Is a large HMO,28
+E07000074,Maldon,-8,Does not apply,29139
+E07000074,Maldon,1,Is a small HMO,10
+E07000074,Maldon,2,Is a large HMO,2
+E07000075,Rochford,-8,Does not apply,36648
+E07000075,Rochford,1,Is a small HMO,11
+E07000075,Rochford,2,Is a large HMO,5
+E07000076,Tendring,-8,Does not apply,72750
+E07000076,Tendring,1,Is a small HMO,26
+E07000076,Tendring,2,Is a large HMO,11
+E07000077,Uttlesford,-8,Does not apply,38809
+E07000077,Uttlesford,1,Is a small HMO,14
+E07000077,Uttlesford,2,Is a large HMO,6
+E07000078,Cheltenham,-8,Does not apply,56201
+E07000078,Cheltenham,1,Is a small HMO,439
+E07000078,Cheltenham,2,Is a large HMO,169
+E07000079,Cotswold,-8,Does not apply,45404
+E07000079,Cotswold,1,Is a small HMO,91
+E07000079,Cotswold,2,Is a large HMO,20
+E07000080,Forest of Dean,-8,Does not apply,39499
+E07000080,Forest of Dean,1,Is a small HMO,24
+E07000080,Forest of Dean,2,Is a large HMO,13
+E07000081,Gloucester,-8,Does not apply,57748
+E07000081,Gloucester,1,Is a small HMO,294
+E07000081,Gloucester,2,Is a large HMO,122
+E07000082,Stroud,-8,Does not apply,54923
+E07000082,Stroud,1,Is a small HMO,55
+E07000082,Stroud,2,Is a large HMO,15
+E07000083,Tewkesbury,-8,Does not apply,42809
+E07000083,Tewkesbury,1,Is a small HMO,19
+E07000083,Tewkesbury,2,Is a large HMO,8
+E07000084,Basingstoke and Deane,-8,Does not apply,78875
+E07000084,Basingstoke and Deane,1,Is a small HMO,163
+E07000084,Basingstoke and Deane,2,Is a large HMO,24
+E07000085,East Hampshire,-8,Does not apply,54672
+E07000085,East Hampshire,1,Is a small HMO,37
+E07000085,East Hampshire,2,Is a large HMO,9
+E07000086,Eastleigh,-8,Does not apply,58682
+E07000086,Eastleigh,1,Is a small HMO,71
+E07000086,Eastleigh,2,Is a large HMO,25
+E07000087,Fareham,-8,Does not apply,50537
+E07000087,Fareham,1,Is a small HMO,34
+E07000087,Fareham,2,Is a large HMO,11
+E07000088,Gosport,-8,Does not apply,37619
+E07000088,Gosport,1,Is a small HMO,38
+E07000088,Gosport,2,Is a large HMO,10
+E07000089,Hart,-8,Does not apply,41309
+E07000089,Hart,1,Is a small HMO,31
+E07000089,Hart,2,Is a large HMO,6
+E07000090,Havant,-8,Does not apply,55941
+E07000090,Havant,1,Is a small HMO,41
+E07000090,Havant,2,Is a large HMO,15
+E07000091,New Forest,-8,Does not apply,83532
+E07000091,New Forest,1,Is a small HMO,67
+E07000091,New Forest,2,Is a large HMO,9
+E07000092,Rushmoor,-8,Does not apply,40869
+E07000092,Rushmoor,1,Is a small HMO,112
+E07000092,Rushmoor,2,Is a large HMO,43
+E07000093,Test Valley,-8,Does not apply,57023
+E07000093,Test Valley,1,Is a small HMO,66
+E07000093,Test Valley,2,Is a large HMO,18
+E07000094,Winchester,-8,Does not apply,53750
+E07000094,Winchester,1,Is a small HMO,516
+E07000094,Winchester,2,Is a large HMO,193
+E07000095,Broxbourne,-8,Does not apply,41361
+E07000095,Broxbourne,1,Is a small HMO,34
+E07000095,Broxbourne,2,Is a large HMO,7
+E07000096,Dacorum,-8,Does not apply,65857
+E07000096,Dacorum,1,Is a small HMO,96
+E07000096,Dacorum,2,Is a large HMO,36
+E07000098,Hertsmere,-8,Does not apply,44730
+E07000098,Hertsmere,1,Is a small HMO,152
+E07000098,Hertsmere,2,Is a large HMO,44
+E07000099,North Hertfordshire,-8,Does not apply,58672
+E07000099,North Hertfordshire,1,Is a small HMO,64
+E07000099,North Hertfordshire,2,Is a large HMO,13
+E07000102,Three Rivers,-8,Does not apply,38391
+E07000102,Three Rivers,1,Is a small HMO,22
+E07000102,Three Rivers,2,Is a large HMO,9
+E07000103,Watford,-8,Does not apply,41161
+E07000103,Watford,1,Is a small HMO,195
+E07000103,Watford,2,Is a large HMO,55
+E07000105,Ashford,-8,Does not apply,56542
+E07000105,Ashford,1,Is a small HMO,80
+E07000105,Ashford,2,Is a large HMO,31
+E07000106,Canterbury,-8,Does not apply,66351
+E07000106,Canterbury,1,Is a small HMO,1203
+E07000106,Canterbury,2,Is a large HMO,393
+E07000107,Dartford,-8,Does not apply,47841
+E07000107,Dartford,1,Is a small HMO,64
+E07000107,Dartford,2,Is a large HMO,18
+E07000108,Dover,-8,Does not apply,54642
+E07000108,Dover,1,Is a small HMO,58
+E07000108,Dover,2,Is a large HMO,20
+E07000109,Gravesham,-8,Does not apply,44000
+E07000109,Gravesham,1,Is a small HMO,64
+E07000109,Gravesham,2,Is a large HMO,7
+E07000110,Maidstone,-8,Does not apply,75340
+E07000110,Maidstone,1,Is a small HMO,167
+E07000110,Maidstone,2,Is a large HMO,52
+E07000111,Sevenoaks,-8,Does not apply,51570
+E07000111,Sevenoaks,1,Is a small HMO,29
+E07000111,Sevenoaks,2,Is a large HMO,6
+E07000112,Folkestone and Hythe,-8,Does not apply,53026
+E07000112,Folkestone and Hythe,1,Is a small HMO,56
+E07000112,Folkestone and Hythe,2,Is a large HMO,26
+E07000113,Swale,-8,Does not apply,66125
+E07000113,Swale,1,Is a small HMO,61
+E07000113,Swale,2,Is a large HMO,14
+E07000114,Thanet,-8,Does not apply,68863
+E07000114,Thanet,1,Is a small HMO,79
+E07000114,Thanet,2,Is a large HMO,22
+E07000115,Tonbridge and Malling,-8,Does not apply,55427
+E07000115,Tonbridge and Malling,1,Is a small HMO,45
+E07000115,Tonbridge and Malling,2,Is a large HMO,15
+E07000116,Tunbridge Wells,-8,Does not apply,50838
+E07000116,Tunbridge Wells,1,Is a small HMO,79
+E07000116,Tunbridge Wells,2,Is a large HMO,18
+E07000117,Burnley,-8,Does not apply,41890
+E07000117,Burnley,1,Is a small HMO,63
+E07000117,Burnley,2,Is a large HMO,2
+E07000118,Chorley,-8,Does not apply,52346
+E07000118,Chorley,1,Is a small HMO,17
+E07000118,Chorley,2,Is a large HMO,6
+E07000119,Fylde,-8,Does not apply,40474
+E07000119,Fylde,1,Is a small HMO,32
+E07000119,Fylde,2,Is a large HMO,4
+E07000120,Hyndburn,-8,Does not apply,37178
+E07000120,Hyndburn,1,Is a small HMO,25
+E07000120,Hyndburn,2,Is a large HMO,4
+E07000121,Lancaster,-8,Does not apply,64455
+E07000121,Lancaster,1,Is a small HMO,611
+E07000121,Lancaster,2,Is a large HMO,337
+E07000122,Pendle,-8,Does not apply,40990
+E07000122,Pendle,1,Is a small HMO,25
+E07000122,Pendle,2,Is a large HMO,5
+E07000123,Preston,-8,Does not apply,63032
+E07000123,Preston,1,Is a small HMO,407
+E07000123,Preston,2,Is a large HMO,117
+E07000124,Ribble Valley,-8,Does not apply,28516
+E07000124,Ribble Valley,1,Is a small HMO,13
+E07000124,Ribble Valley,2,Is a large HMO,6
+E07000125,Rossendale,-8,Does not apply,32306
+E07000125,Rossendale,1,Is a small HMO,15
+E07000125,Rossendale,2,Is a large HMO,2
+E07000126,South Ribble,-8,Does not apply,50569
+E07000126,South Ribble,1,Is a small HMO,20
+E07000126,South Ribble,2,Is a large HMO,4
+E07000127,West Lancashire,-8,Does not apply,50983
+E07000127,West Lancashire,1,Is a small HMO,270
+E07000127,West Lancashire,2,Is a large HMO,127
+E07000128,Wyre,-8,Does not apply,54096
+E07000128,Wyre,1,Is a small HMO,41
+E07000128,Wyre,2,Is a large HMO,4
+E07000129,Blaby,-8,Does not apply,43605
+E07000129,Blaby,1,Is a small HMO,28
+E07000129,Blaby,2,Is a large HMO,2
+E07000130,Charnwood,-8,Does not apply,75747
+E07000130,Charnwood,1,Is a small HMO,814
+E07000130,Charnwood,2,Is a large HMO,462
+E07000131,Harborough,-8,Does not apply,41884
+E07000131,Harborough,1,Is a small HMO,14
+E07000131,Harborough,2,Is a large HMO,3
+E07000132,Hinckley and Bosworth,-8,Does not apply,50979
+E07000132,Hinckley and Bosworth,1,Is a small HMO,34
+E07000132,Hinckley and Bosworth,2,Is a large HMO,4
+E07000133,Melton,-8,Does not apply,23598
+E07000133,Melton,1,Is a small HMO,10
+E07000133,Melton,2,Is a large HMO,2
+E07000134,North West Leicestershire,-8,Does not apply,46479
+E07000134,North West Leicestershire,1,Is a small HMO,157
+E07000134,North West Leicestershire,2,Is a large HMO,53
+E07000135,Oadby and Wigston,-8,Does not apply,23539
+E07000135,Oadby and Wigston,1,Is a small HMO,25
+E07000135,Oadby and Wigston,2,Is a large HMO,7
+E07000136,Boston,-8,Does not apply,30818
+E07000136,Boston,1,Is a small HMO,66
+E07000136,Boston,2,Is a large HMO,8
+E07000137,East Lindsey,-8,Does not apply,88366
+E07000137,East Lindsey,1,Is a small HMO,22
+E07000137,East Lindsey,2,Is a large HMO,6
+E07000138,Lincoln,-8,Does not apply,43919
+E07000138,Lincoln,1,Is a small HMO,829
+E07000138,Lincoln,2,Is a large HMO,368
+E07000139,North Kesteven,-8,Does not apply,52722
+E07000139,North Kesteven,1,Is a small HMO,27
+E07000139,North Kesteven,2,Is a large HMO,3
+E07000140,South Holland,-8,Does not apply,42340
+E07000140,South Holland,1,Is a small HMO,76
+E07000140,South Holland,2,Is a large HMO,14
+E07000141,South Kesteven,-8,Does not apply,65664
+E07000141,South Kesteven,1,Is a small HMO,47
+E07000141,South Kesteven,2,Is a large HMO,1
+E07000142,West Lindsey,-8,Does not apply,44719
+E07000142,West Lindsey,1,Is a small HMO,17
+E07000142,West Lindsey,2,Is a large HMO,1
+E07000143,Breckland,-8,Does not apply,63092
+E07000143,Breckland,1,Is a small HMO,51
+E07000143,Breckland,2,Is a large HMO,11
+E07000144,Broadland,-8,Does not apply,59842
+E07000144,Broadland,1,Is a small HMO,22
+E07000144,Broadland,2,Is a large HMO,6
+E07000145,Great Yarmouth,-8,Does not apply,49262
+E07000145,Great Yarmouth,1,Is a small HMO,38
+E07000145,Great Yarmouth,2,Is a large HMO,13
+E07000146,King's Lynn and West Norfolk,-8,Does not apply,74672
+E07000146,King's Lynn and West Norfolk,1,Is a small HMO,94
+E07000146,King's Lynn and West Norfolk,2,Is a large HMO,16
+E07000147,North Norfolk,-8,Does not apply,56668
+E07000147,North Norfolk,1,Is a small HMO,11
+E07000147,North Norfolk,2,Is a large HMO,1
+E07000148,Norwich,-8,Does not apply,65598
+E07000148,Norwich,1,Is a small HMO,1419
+E07000148,Norwich,2,Is a large HMO,607
+E07000149,South Norfolk,-8,Does not apply,63781
+E07000149,South Norfolk,1,Is a small HMO,54
+E07000149,South Norfolk,2,Is a large HMO,14
+E07000163,Craven,-8,Does not apply,28657
+E07000163,Craven,1,Is a small HMO,15
+E07000163,Craven,2,Is a large HMO,1
+E07000164,Hambleton,-8,Does not apply,43554
+E07000164,Hambleton,1,Is a small HMO,17
+E07000164,Hambleton,2,Is a large HMO,2
+E07000165,Harrogate,-8,Does not apply,75283
+E07000165,Harrogate,1,Is a small HMO,76
+E07000165,Harrogate,2,Is a large HMO,27
+E07000166,Richmondshire,-8,Does not apply,23590
+E07000166,Richmondshire,1,Is a small HMO,17
+E07000166,Richmondshire,2,Is a large HMO,3
+E07000167,Ryedale,-8,Does not apply,27350
+E07000167,Ryedale,1,Is a small HMO,14
+E07000167,Ryedale,2,Is a large HMO,1
+E07000168,Scarborough,-8,Does not apply,59276
+E07000168,Scarborough,1,Is a small HMO,44
+E07000168,Scarborough,2,Is a large HMO,26
+E07000169,Selby,-8,Does not apply,41163
+E07000169,Selby,1,Is a small HMO,16
+E07000169,Selby,2,Is a large HMO,0
+E07000170,Ashfield,-8,Does not apply,56639
+E07000170,Ashfield,1,Is a small HMO,35
+E07000170,Ashfield,2,Is a large HMO,12
+E07000171,Bassetlaw,-8,Does not apply,54344
+E07000171,Bassetlaw,1,Is a small HMO,24
+E07000171,Bassetlaw,2,Is a large HMO,1
+E07000172,Broxtowe,-8,Does not apply,50165
+E07000172,Broxtowe,1,Is a small HMO,349
+E07000172,Broxtowe,2,Is a large HMO,109
+E07000173,Gedling,-8,Does not apply,53428
+E07000173,Gedling,1,Is a small HMO,38
+E07000173,Gedling,2,Is a large HMO,13
+E07000174,Mansfield,-8,Does not apply,50435
+E07000174,Mansfield,1,Is a small HMO,65
+E07000174,Mansfield,2,Is a large HMO,20
+E07000175,Newark and Sherwood,-8,Does not apply,55995
+E07000175,Newark and Sherwood,1,Is a small HMO,60
+E07000175,Newark and Sherwood,2,Is a large HMO,12
+E07000176,Rushcliffe,-8,Does not apply,51610
+E07000176,Rushcliffe,1,Is a small HMO,227
+E07000176,Rushcliffe,2,Is a large HMO,150
+E07000177,Cherwell,-8,Does not apply,68961
+E07000177,Cherwell,1,Is a small HMO,178
+E07000177,Cherwell,2,Is a large HMO,61
+E07000178,Oxford,-8,Does not apply,56316
+E07000178,Oxford,1,Is a small HMO,1632
+E07000178,Oxford,2,Is a large HMO,1032
+E07000179,South Oxfordshire,-8,Does not apply,64278
+E07000179,South Oxfordshire,1,Is a small HMO,129
+E07000179,South Oxfordshire,2,Is a large HMO,32
+E07000180,Vale of White Horse,-8,Does not apply,60292
+E07000180,Vale of White Horse,1,Is a small HMO,128
+E07000180,Vale of White Horse,2,Is a large HMO,27
+E07000181,West Oxfordshire,-8,Does not apply,50990
+E07000181,West Oxfordshire,1,Is a small HMO,72
+E07000181,West Oxfordshire,2,Is a large HMO,15
+E07000187,Mendip,-8,Does not apply,53446
+E07000187,Mendip,1,Is a small HMO,43
+E07000187,Mendip,2,Is a large HMO,8
+E07000188,Sedgemoor,-8,Does not apply,56739
+E07000188,Sedgemoor,1,Is a small HMO,73
+E07000188,Sedgemoor,2,Is a large HMO,12
+E07000189,South Somerset,-8,Does not apply,79668
+E07000189,South Somerset,1,Is a small HMO,107
+E07000189,South Somerset,2,Is a large HMO,34
+E07000192,Cannock Chase,-8,Does not apply,44806
+E07000192,Cannock Chase,1,Is a small HMO,35
+E07000192,Cannock Chase,2,Is a large HMO,0
+E07000193,East Staffordshire,-8,Does not apply,53509
+E07000193,East Staffordshire,1,Is a small HMO,82
+E07000193,East Staffordshire,2,Is a large HMO,19
+E07000194,Lichfield,-8,Does not apply,46991
+E07000194,Lichfield,1,Is a small HMO,21
+E07000194,Lichfield,2,Is a large HMO,3
+E07000195,Newcastle-under-Lyme,-8,Does not apply,55893
+E07000195,Newcastle-under-Lyme,1,Is a small HMO,309
+E07000195,Newcastle-under-Lyme,2,Is a large HMO,95
+E07000196,South Staffordshire,-8,Does not apply,47932
+E07000196,South Staffordshire,1,Is a small HMO,12
+E07000196,South Staffordshire,2,Is a large HMO,2
+E07000197,Stafford,-8,Does not apply,62538
+E07000197,Stafford,1,Is a small HMO,61
+E07000197,Stafford,2,Is a large HMO,12
+E07000198,Staffordshire Moorlands,-8,Does not apply,44785
+E07000198,Staffordshire Moorlands,1,Is a small HMO,8
+E07000198,Staffordshire Moorlands,2,Is a large HMO,2
+E07000199,Tamworth,-8,Does not apply,33837
+E07000199,Tamworth,1,Is a small HMO,44
+E07000199,Tamworth,2,Is a large HMO,10
+E07000200,Babergh,-8,Does not apply,41823
+E07000200,Babergh,1,Is a small HMO,17
+E07000200,Babergh,2,Is a large HMO,4
+E07000202,Ipswich,-8,Does not apply,61271
+E07000202,Ipswich,1,Is a small HMO,140
+E07000202,Ipswich,2,Is a large HMO,47
+E07000203,Mid Suffolk,-8,Does not apply,46148
+E07000203,Mid Suffolk,1,Is a small HMO,11
+E07000203,Mid Suffolk,2,Is a large HMO,8
+E07000207,Elmbridge,-8,Does not apply,58813
+E07000207,Elmbridge,1,Is a small HMO,71
+E07000207,Elmbridge,2,Is a large HMO,18
+E07000208,Epsom and Ewell,-8,Does not apply,32430
+E07000208,Epsom and Ewell,1,Is a small HMO,120
+E07000208,Epsom and Ewell,2,Is a large HMO,53
+E07000209,Guildford,-8,Does not apply,57676
+E07000209,Guildford,1,Is a small HMO,1001
+E07000209,Guildford,2,Is a large HMO,352
+E07000210,Mole Valley,-8,Does not apply,38852
+E07000210,Mole Valley,1,Is a small HMO,46
+E07000210,Mole Valley,2,Is a large HMO,9
+E07000211,Reigate and Banstead,-8,Does not apply,62363
+E07000211,Reigate and Banstead,1,Is a small HMO,120
+E07000211,Reigate and Banstead,2,Is a large HMO,29
+E07000212,Runnymede,-8,Does not apply,36385
+E07000212,Runnymede,1,Is a small HMO,456
+E07000212,Runnymede,2,Is a large HMO,238
+E07000213,Spelthorne,-8,Does not apply,43565
+E07000213,Spelthorne,1,Is a small HMO,93
+E07000213,Spelthorne,2,Is a large HMO,40
+E07000214,Surrey Heath,-8,Does not apply,37472
+E07000214,Surrey Heath,1,Is a small HMO,82
+E07000214,Surrey Heath,2,Is a large HMO,37
+E07000215,Tandridge,-8,Does not apply,37328
+E07000215,Tandridge,1,Is a small HMO,39
+E07000215,Tandridge,2,Is a large HMO,11
+E07000216,Waverley,-8,Does not apply,54733
+E07000216,Waverley,1,Is a small HMO,188
+E07000216,Waverley,2,Is a large HMO,47
+E07000217,Woking,-8,Does not apply,43431
+E07000217,Woking,1,Is a small HMO,99
+E07000217,Woking,2,Is a large HMO,39
+E07000218,North Warwickshire,-8,Does not apply,29011
+E07000218,North Warwickshire,1,Is a small HMO,15
+E07000218,North Warwickshire,2,Is a large HMO,1
+E07000219,Nuneaton and Bedworth,-8,Does not apply,58563
+E07000219,Nuneaton and Bedworth,1,Is a small HMO,33
+E07000219,Nuneaton and Bedworth,2,Is a large HMO,9
+E07000220,Rugby,-8,Does not apply,48882
+E07000220,Rugby,1,Is a small HMO,134
+E07000220,Rugby,2,Is a large HMO,82
+E07000221,Stratford-on-Avon,-8,Does not apply,63365
+E07000221,Stratford-on-Avon,1,Is a small HMO,82
+E07000221,Stratford-on-Avon,2,Is a large HMO,18
+E07000222,Warwick,-8,Does not apply,65351
+E07000222,Warwick,1,Is a small HMO,618
+E07000222,Warwick,2,Is a large HMO,414
+E07000223,Adur,-8,Does not apply,28639
+E07000223,Adur,1,Is a small HMO,37
+E07000223,Adur,2,Is a large HMO,13
+E07000224,Arun,-8,Does not apply,76524
+E07000224,Arun,1,Is a small HMO,147
+E07000224,Arun,2,Is a large HMO,55
+E07000225,Chichester,-8,Does not apply,59313
+E07000225,Chichester,1,Is a small HMO,261
+E07000225,Chichester,2,Is a large HMO,119
+E07000226,Crawley,-8,Does not apply,46364
+E07000226,Crawley,1,Is a small HMO,262
+E07000226,Crawley,2,Is a large HMO,83
+E07000227,Horsham,-8,Does not apply,64794
+E07000227,Horsham,1,Is a small HMO,51
+E07000227,Horsham,2,Is a large HMO,10
+E07000228,Mid Sussex,-8,Does not apply,65972
+E07000228,Mid Sussex,1,Is a small HMO,57
+E07000228,Mid Sussex,2,Is a large HMO,6
+E07000229,Worthing,-8,Does not apply,51327
+E07000229,Worthing,1,Is a small HMO,104
+E07000229,Worthing,2,Is a large HMO,38
+E07000234,Bromsgrove,-8,Does not apply,42716
+E07000234,Bromsgrove,1,Is a small HMO,13
+E07000234,Bromsgrove,2,Is a large HMO,4
+E07000235,Malvern Hills,-8,Does not apply,36941
+E07000235,Malvern Hills,1,Is a small HMO,20
+E07000235,Malvern Hills,2,Is a large HMO,4
+E07000236,Redditch,-8,Does not apply,37654
+E07000236,Redditch,1,Is a small HMO,64
+E07000236,Redditch,2,Is a large HMO,16
+E07000237,Worcester,-8,Does not apply,46182
+E07000237,Worcester,1,Is a small HMO,337
+E07000237,Worcester,2,Is a large HMO,139
+E07000238,Wychavon,-8,Does not apply,59802
+E07000238,Wychavon,1,Is a small HMO,49
+E07000238,Wychavon,2,Is a large HMO,11
+E07000239,Wyre Forest,-8,Does not apply,48093
+E07000239,Wyre Forest,1,Is a small HMO,23
+E07000239,Wyre Forest,2,Is a large HMO,2
+E07000240,St Albans,-8,Does not apply,61907
+E07000240,St Albans,1,Is a small HMO,99
+E07000240,St Albans,2,Is a large HMO,17
+E07000241,Welwyn Hatfield,-8,Does not apply,47788
+E07000241,Welwyn Hatfield,1,Is a small HMO,548
+E07000241,Welwyn Hatfield,2,Is a large HMO,262
+E07000242,East Hertfordshire,-8,Does not apply,64523
+E07000242,East Hertfordshire,1,Is a small HMO,142
+E07000242,East Hertfordshire,2,Is a large HMO,28
+E07000243,Stevenage,-8,Does not apply,37591
+E07000243,Stevenage,1,Is a small HMO,127
+E07000243,Stevenage,2,Is a large HMO,56
+E07000244,East Suffolk,-8,Does not apply,120469
+E07000244,East Suffolk,1,Is a small HMO,47
+E07000244,East Suffolk,2,Is a large HMO,12
+E07000245,West Suffolk,-8,Does not apply,81482
+E07000245,West Suffolk,1,Is a small HMO,117
+E07000245,West Suffolk,2,Is a large HMO,24
+E07000246,Somerset West and Taunton,-8,Does not apply,74691
+E07000246,Somerset West and Taunton,1,Is a small HMO,70
+E07000246,Somerset West and Taunton,2,Is a large HMO,44
+E08000001,Bolton,-8,Does not apply,125979
+E08000001,Bolton,1,Is a small HMO,88
+E08000001,Bolton,2,Is a large HMO,29
+E08000002,Bury,-8,Does not apply,84534
+E08000002,Bury,1,Is a small HMO,75
+E08000002,Bury,2,Is a large HMO,14
+E08000003,Manchester,-8,Does not apply,227378
+E08000003,Manchester,1,Is a small HMO,3739
+E08000003,Manchester,2,Is a large HMO,1789
+E08000004,Oldham,-8,Does not apply,97761
+E08000004,Oldham,1,Is a small HMO,83
+E08000004,Oldham,2,Is a large HMO,5
+E08000005,Rochdale,-8,Does not apply,95901
+E08000005,Rochdale,1,Is a small HMO,33
+E08000005,Rochdale,2,Is a large HMO,8
+E08000006,Salford,-8,Does not apply,123752
+E08000006,Salford,1,Is a small HMO,1137
+E08000006,Salford,2,Is a large HMO,273
+E08000007,Stockport,-8,Does not apply,131241
+E08000007,Stockport,1,Is a small HMO,129
+E08000007,Stockport,2,Is a large HMO,15
+E08000008,Tameside,-8,Does not apply,103949
+E08000008,Tameside,1,Is a small HMO,68
+E08000008,Tameside,2,Is a large HMO,11
+E08000009,Trafford,-8,Does not apply,100560
+E08000009,Trafford,1,Is a small HMO,167
+E08000009,Trafford,2,Is a large HMO,27
+E08000010,Wigan,-8,Does not apply,148967
+E08000010,Wigan,1,Is a small HMO,94
+E08000010,Wigan,2,Is a large HMO,13
+E08000011,Knowsley,-8,Does not apply,69655
+E08000011,Knowsley,1,Is a small HMO,13
+E08000011,Knowsley,2,Is a large HMO,3
+E08000012,Liverpool,-8,Does not apply,224055
+E08000012,Liverpool,1,Is a small HMO,1991
+E08000012,Liverpool,2,Is a large HMO,1425
+E08000013,St. Helens,-8,Does not apply,85104
+E08000013,St. Helens,1,Is a small HMO,45
+E08000013,St. Helens,2,Is a large HMO,3
+E08000014,Sefton,-8,Does not apply,129988
+E08000014,Sefton,1,Is a small HMO,91
+E08000014,Sefton,2,Is a large HMO,67
+E08000015,Wirral,-8,Does not apply,150796
+E08000015,Wirral,1,Is a small HMO,98
+E08000015,Wirral,2,Is a large HMO,22
+E08000016,Barnsley,-8,Does not apply,113529
+E08000016,Barnsley,1,Is a small HMO,79
+E08000016,Barnsley,2,Is a large HMO,17
+E08000017,Doncaster,-8,Does not apply,140233
+E08000017,Doncaster,1,Is a small HMO,139
+E08000017,Doncaster,2,Is a large HMO,39
+E08000018,Rotherham,-8,Does not apply,119304
+E08000018,Rotherham,1,Is a small HMO,55
+E08000018,Rotherham,2,Is a large HMO,9
+E08000019,Sheffield,-8,Does not apply,241994
+E08000019,Sheffield,1,Is a small HMO,2354
+E08000019,Sheffield,2,Is a large HMO,1280
+E08000021,Newcastle upon Tyne,-8,Does not apply,125876
+E08000021,Newcastle upon Tyne,1,Is a small HMO,2211
+E08000021,Newcastle upon Tyne,2,Is a large HMO,1466
+E08000022,North Tyneside,-8,Does not apply,100027
+E08000022,North Tyneside,1,Is a small HMO,40
+E08000022,North Tyneside,2,Is a large HMO,2
+E08000023,South Tyneside,-8,Does not apply,72153
+E08000023,South Tyneside,1,Is a small HMO,23
+E08000023,South Tyneside,2,Is a large HMO,5
+E08000024,Sunderland,-8,Does not apply,130192
+E08000024,Sunderland,1,Is a small HMO,142
+E08000024,Sunderland,2,Is a large HMO,32
+E08000025,Birmingham,-8,Does not apply,442163
+E08000025,Birmingham,1,Is a small HMO,2319
+E08000025,Birmingham,2,Is a large HMO,1809
+E08000026,Coventry,-8,Does not apply,141329
+E08000026,Coventry,1,Is a small HMO,1539
+E08000026,Coventry,2,Is a large HMO,539
+E08000027,Dudley,-8,Does not apply,140193
+E08000027,Dudley,1,Is a small HMO,87
+E08000027,Dudley,2,Is a large HMO,6
+E08000028,Sandwell,-8,Does not apply,134521
+E08000028,Sandwell,1,Is a small HMO,208
+E08000028,Sandwell,2,Is a large HMO,29
+E08000029,Solihull,-8,Does not apply,94180
+E08000029,Solihull,1,Is a small HMO,66
+E08000029,Solihull,2,Is a large HMO,27
+E08000030,Walsall,-8,Does not apply,117137
+E08000030,Walsall,1,Is a small HMO,68
+E08000030,Walsall,2,Is a large HMO,10
+E08000031,Wolverhampton,-8,Does not apply,112187
+E08000031,Wolverhampton,1,Is a small HMO,187
+E08000031,Wolverhampton,2,Is a large HMO,28
+E08000032,Bradford,-8,Does not apply,219510
+E08000032,Bradford,1,Is a small HMO,207
+E08000032,Bradford,2,Is a large HMO,45
+E08000033,Calderdale,-8,Does not apply,96193
+E08000033,Calderdale,1,Is a small HMO,48
+E08000033,Calderdale,2,Is a large HMO,8
+E08000034,Kirklees,-8,Does not apply,187707
+E08000034,Kirklees,1,Is a small HMO,296
+E08000034,Kirklees,2,Is a large HMO,105
+E08000035,Leeds,-8,Does not apply,352171
+E08000035,Leeds,1,Is a small HMO,3346
+E08000035,Leeds,2,Is a large HMO,1943
+E08000036,Wakefield,-8,Does not apply,160930
+E08000036,Wakefield,1,Is a small HMO,112
+E08000036,Wakefield,2,Is a large HMO,29
+E08000037,Gateshead,-8,Does not apply,93921
+E08000037,Gateshead,1,Is a small HMO,107
+E08000037,Gateshead,2,Is a large HMO,24
+E09000001,City of London,-8,Does not apply,7246
+E09000001,City of London,1,Is a small HMO,72
+E09000001,City of London,2,Is a large HMO,6
+E09000002,Barking and Dagenham,-8,Does not apply,76658
+E09000002,Barking and Dagenham,1,Is a small HMO,255
+E09000002,Barking and Dagenham,2,Is a large HMO,43
+E09000003,Barnet,-8,Does not apply,154623
+E09000003,Barnet,1,Is a small HMO,1308
+E09000003,Barnet,2,Is a large HMO,216
+E09000004,Bexley,-8,Does not apply,98969
+E09000004,Bexley,1,Is a small HMO,277
+E09000004,Bexley,2,Is a large HMO,67
+E09000005,Brent,-8,Does not apply,125756
+E09000005,Brent,1,Is a small HMO,1690
+E09000005,Brent,2,Is a large HMO,415
+E09000006,Bromley,-8,Does not apply,141758
+E09000006,Bromley,1,Is a small HMO,271
+E09000006,Bromley,2,Is a large HMO,54
+E09000007,Camden,-8,Does not apply,105721
+E09000007,Camden,1,Is a small HMO,2325
+E09000007,Camden,2,Is a large HMO,190
+E09000008,Croydon,-8,Does not apply,161543
+E09000008,Croydon,1,Is a small HMO,581
+E09000008,Croydon,2,Is a large HMO,149
+E09000009,Ealing,-8,Does not apply,139877
+E09000009,Ealing,1,Is a small HMO,1809
+E09000009,Ealing,2,Is a large HMO,440
+E09000010,Enfield,-8,Does not apply,127313
+E09000010,Enfield,1,Is a small HMO,578
+E09000010,Enfield,2,Is a large HMO,165
+E09000011,Greenwich,-8,Does not apply,119896
+E09000011,Greenwich,1,Is a small HMO,953
+E09000011,Greenwich,2,Is a large HMO,168
+E09000012,Hackney,-8,Does not apply,112183
+E09000012,Hackney,1,Is a small HMO,3740
+E09000012,Hackney,2,Is a large HMO,419
+E09000013,Hammersmith and Fulham,-8,Does not apply,89967
+E09000013,Hammersmith and Fulham,1,Is a small HMO,2569
+E09000013,Hammersmith and Fulham,2,Is a large HMO,357
+E09000014,Haringey,-8,Does not apply,110718
+E09000014,Haringey,1,Is a small HMO,2018
+E09000014,Haringey,2,Is a large HMO,593
+E09000015,Harrow,-8,Does not apply,94219
+E09000015,Harrow,1,Is a small HMO,460
+E09000015,Harrow,2,Is a large HMO,113
+E09000016,Havering,-8,Does not apply,106342
+E09000016,Havering,1,Is a small HMO,185
+E09000016,Havering,2,Is a large HMO,30
+E09000017,Hillingdon,-8,Does not apply,114703
+E09000017,Hillingdon,1,Is a small HMO,550
+E09000017,Hillingdon,2,Is a large HMO,221
+E09000018,Hounslow,-8,Does not apply,106855
+E09000018,Hounslow,1,Is a small HMO,1007
+E09000018,Hounslow,2,Is a large HMO,271
+E09000019,Islington,-8,Does not apply,103553
+E09000019,Islington,1,Is a small HMO,2985
+E09000019,Islington,2,Is a large HMO,361
+E09000020,Kensington and Chelsea,-8,Does not apply,88283
+E09000020,Kensington and Chelsea,1,Is a small HMO,846
+E09000020,Kensington and Chelsea,2,Is a large HMO,98
+E09000021,Kingston upon Thames,-8,Does not apply,68069
+E09000021,Kingston upon Thames,1,Is a small HMO,661
+E09000021,Kingston upon Thames,2,Is a large HMO,155
+E09000022,Lambeth,-8,Does not apply,140492
+E09000022,Lambeth,1,Is a small HMO,5300
+E09000022,Lambeth,2,Is a large HMO,619
+E09000023,Lewisham,-8,Does not apply,129258
+E09000023,Lewisham,1,Is a small HMO,1853
+E09000023,Lewisham,2,Is a large HMO,341
+E09000024,Merton,-8,Does not apply,85238
+E09000024,Merton,1,Is a small HMO,1187
+E09000024,Merton,2,Is a large HMO,199
+E09000025,Newham,-8,Does not apply,122667
+E09000025,Newham,1,Is a small HMO,1953
+E09000025,Newham,2,Is a large HMO,393
+E09000026,Redbridge,-8,Does not apply,106837
+E09000026,Redbridge,1,Is a small HMO,526
+E09000026,Redbridge,2,Is a large HMO,126
+E09000027,Richmond upon Thames,-8,Does not apply,85102
+E09000027,Richmond upon Thames,1,Is a small HMO,411
+E09000027,Richmond upon Thames,2,Is a large HMO,74
+E09000028,Southwark,-8,Does not apply,137703
+E09000028,Southwark,1,Is a small HMO,3739
+E09000028,Southwark,2,Is a large HMO,520
+E09000029,Sutton,-8,Does not apply,85077
+E09000029,Sutton,1,Is a small HMO,139
+E09000029,Sutton,2,Is a large HMO,33
+E09000030,Tower Hamlets,-8,Does not apply,129739
+E09000030,Tower Hamlets,1,Is a small HMO,4250
+E09000030,Tower Hamlets,2,Is a large HMO,484
+E09000031,Waltham Forest,-8,Does not apply,106741
+E09000031,Waltham Forest,1,Is a small HMO,1195
+E09000031,Waltham Forest,2,Is a large HMO,236
+E09000032,Wandsworth,-8,Does not apply,144011
+E09000032,Wandsworth,1,Is a small HMO,5863
+E09000032,Wandsworth,2,Is a large HMO,593
+E09000033,Westminster,-8,Does not apply,126687
+E09000033,Westminster,1,Is a small HMO,2000
+E09000033,Westminster,2,Is a large HMO,225
+W06000001,Isle of Anglesey,-8,Does not apply,36192
+W06000001,Isle of Anglesey,1,Is a small HMO,18
+W06000001,Isle of Anglesey,2,Is a large HMO,7
+W06000002,Gwynedd,-8,Does not apply,62739
+W06000002,Gwynedd,1,Is a small HMO,320
+W06000002,Gwynedd,2,Is a large HMO,162
+W06000003,Conwy,-8,Does not apply,57960
+W06000003,Conwy,1,Is a small HMO,20
+W06000003,Conwy,2,Is a large HMO,4
+W06000004,Denbighshire,-8,Does not apply,50300
+W06000004,Denbighshire,1,Is a small HMO,19
+W06000004,Denbighshire,2,Is a large HMO,7
+W06000005,Flintshire,-8,Does not apply,70490
+W06000005,Flintshire,1,Is a small HMO,53
+W06000005,Flintshire,2,Is a large HMO,10
+W06000006,Wrexham,-8,Does not apply,61182
+W06000006,Wrexham,1,Is a small HMO,54
+W06000006,Wrexham,2,Is a large HMO,20
+W06000008,Ceredigion,-8,Does not apply,36330
+W06000008,Ceredigion,1,Is a small HMO,257
+W06000008,Ceredigion,2,Is a large HMO,157
+W06000009,Pembrokeshire,-8,Does not apply,64371
+W06000009,Pembrokeshire,1,Is a small HMO,29
+W06000009,Pembrokeshire,2,Is a large HMO,2
+W06000010,Carmarthenshire,-8,Does not apply,89327
+W06000010,Carmarthenshire,1,Is a small HMO,59
+W06000010,Carmarthenshire,2,Is a large HMO,18
+W06000011,Swansea,-8,Does not apply,113162
+W06000011,Swansea,1,Is a small HMO,748
+W06000011,Swansea,2,Is a large HMO,551
+W06000012,Neath Port Talbot,-8,Does not apply,66378
+W06000012,Neath Port Talbot,1,Is a small HMO,23
+W06000012,Neath Port Talbot,2,Is a large HMO,3
+W06000013,Bridgend,-8,Does not apply,65509
+W06000013,Bridgend,1,Is a small HMO,29
+W06000013,Bridgend,2,Is a large HMO,14
+W06000014,Vale of Glamorgan,-8,Does not apply,60580
+W06000014,Vale of Glamorgan,1,Is a small HMO,20
+W06000014,Vale of Glamorgan,2,Is a large HMO,9
+W06000015,Cardiff,-8,Does not apply,152266
+W06000015,Cardiff,1,Is a small HMO,2225
+W06000015,Cardiff,2,Is a large HMO,1448
+W06000016,Rhondda Cynon Taf,-8,Does not apply,110394
+W06000016,Rhondda Cynon Taf,1,Is a small HMO,282
+W06000016,Rhondda Cynon Taf,2,Is a large HMO,74
+W06000018,Caerphilly,-8,Does not apply,80173
+W06000018,Caerphilly,1,Is a small HMO,33
+W06000018,Caerphilly,2,Is a large HMO,6
+W06000019,Blaenau Gwent,-8,Does not apply,32847
+W06000019,Blaenau Gwent,1,Is a small HMO,16
+W06000019,Blaenau Gwent,2,Is a large HMO,1
+W06000020,Torfaen,-8,Does not apply,42728
+W06000020,Torfaen,1,Is a small HMO,20
+W06000020,Torfaen,2,Is a large HMO,8
+W06000021,Monmouthshire,-8,Does not apply,43434
+W06000021,Monmouthshire,1,Is a small HMO,22
+W06000021,Monmouthshire,2,Is a large HMO,1
+W06000022,Newport,-8,Does not apply,69611
+W06000022,Newport,1,Is a small HMO,69
+W06000022,Newport,2,Is a large HMO,39
+W06000023,Powys,-8,Does not apply,66838
+W06000023,Powys,1,Is a small HMO,21
+W06000023,Powys,2,Is a large HMO,7
+W06000024,Merthyr Tydfil,-8,Does not apply,27486
+W06000024,Merthyr Tydfil,1,Is a small HMO,6
+W06000024,Merthyr Tydfil,2,Is a large HMO,0
