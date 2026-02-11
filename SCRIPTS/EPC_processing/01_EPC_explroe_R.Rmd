@@ -1,0 +1,711 @@
+---
+title: "01_EPC_explore"
+author: "Lenka"
+date: "2026-01-23"
+output: html_document
+---
+
+Packages
+
+```{r, echo = false}
+library("tidyverse")
+library("sf")
+library("dplyr")
+library("ggplot2")
+library("tibble")
+library(grid)
+library(reshape2)
+library(ggcorrplot)
+```
+
+
+# 1) Load and Explore
+```{r, echo = false}
+data <- read_csv("mec_combined_withgap.csv")
+LSOA <- st_read('LSOA2021_DZ2011/GB_LSOA21_DZ11.shp')
+```
+
+```{r}
+LSOA <- LSOA %>%
+  left_join(data, by= c("mapcode"="LSOA_CODE_GB"))
+```
+
+```{r}
+df_num <- LSOA %>%
+  st_drop_geometry() %>%
+  select(where(is.numeric))
+
+target <- "D_GAP_normalised"
+
+cor_mat <- cor(
+  df_num,
+  df_num[[target]],
+  use = "pairwise.complete.obs"
+)
+
+cor_df <- tibble::tibble(
+  variable = rownames(cor_mat),
+  correlation = as.numeric(cor_mat[, 1]),
+  highlight = rownames(cor_mat) == target
+)
+
+ggplot(cor_df, aes(x = 1, y = reorder(variable, correlation), fill = correlation)) +
+  geom_tile(color = "white") +
+  geom_tile(
+    data = subset(cor_df, highlight),
+    color = "black",
+    linewidth = 1
+  ) +
+  scale_fill_gradient2(
+    low = "blue",
+    mid = "white",
+    high = "red",
+    midpoint = 0,
+    limits = c(-1, 1)
+  ) +
+  labs(
+    title = "Correlation with D_GAP_normalised",
+    x = NULL,
+    y = NULL
+  ) +
+  theme_minimal() +
+  theme(
+    axis.text.x = element_blank(),
+    axis.ticks.x = element_blank()
+  )
+```
+```{r}
+cor_df[abs(cor_df$correlation) >0.4,]
+```
+```{r}
+
+# Convert sf to data frame (drop geometry)
+LSOA_df <- as.data.frame(LSOA)
+
+# Core variable
+core_var <- "D_GAP_normalised"
+
+# List of all base variables
+base_vars <- c(
+  "D_GAP_normalised",
+  "mapcode", "COUNTRY", 
+  "A_GasMeter_num","A_Gas_Consump_mean","A_GasNonMeter_num","A_ElecMeter_num","A_Elec_Consump_mean",
+  "D_Pred_Rank_Ener_m2_mean","D_EPC_vs_Census_prop","D_Gas_Elec_Meter_ratio","D_Act_Ener_Consump_mean",
+  "D_Act_Gas_Consump_m2_mean","D_Act_Elec_Consump_m2_mean","D_Act_Ener_Consump_m2_mean","D_Act_Rank_Gas_m2",
+  "D_Act_Rank_Elec_m2","D_Act_Rank_Ener_m2_averaged","D_Act_Rank_Ener_m2",
+  "E_SOLID_FUEL_HIGH","E_PropAge_modal","E_FloorArea_mean","E_EPC_num","E_MULTI_GLAZE_PROP_mean",
+  "E_EXTENSION_COUNT_mean","E_PHOTO_SUPPLY_prop","E_ROOF_INSULATION_prop","E_THATCHED_prop",
+  "E_OpenFire_mean","E_OpenFire_prop","E_HEAT_MAIN_ELECTRIC_prop","E_HEAT_MAIN_SOLIDFUEL_prop",
+  "E_HEAT_MAIN_OTHER_prop","E_HEAT_MAIN_ELECTRIC_OTHER_prop","E_HEAT_MAIN_ELECTRIC_SOLID_prop",
+  "E_HEAT_MAIN_SOLID_OTHER_prop","E_HEAT_MAIN_HEATPUMP_prop","E_HEAT_2ND_ELECTRIC_prop",
+  "E_HEAT_2ND_SOLIDFUEL_prop","E_HEAT_2ND_OTHER_prop","E_HEAT_2ND_ELECTRIC_OTHER_prop",
+  "E_HEAT_2ND_ELECTRIC_SOLID_prop","E_HEAT_2ND_SOLID_OTHER_prop","E_HEAT_2ND_HEATPUMP_prop",
+  "E_MAINS_GAS_prop","E_AGE_mean","E_TENURE_OWNED_prop","E_TENURE_PRIVRENT_prop","E_TENURE_SOCRENT_prop",
+  "E_TYPE_DETACHED_prop","E_TYPE_ENDTERRACE_prop","E_TYPE_MIDTERRACE_prop","E_TYPE_SEMI_prop",
+  "E_TYPE_BUNGALOW_prop","E_TYPE_FLAT_prop","E_TYPE_HOUSE_prop","E_TYPE_MAISONETTE_prop",
+  "E_TYPE_PARKHOME_prop","E_AGE_1976_2002_prop","E_AGE_1930_1949_prop","E_AGE_pre1929_prop",
+  "E_AGE_1950_1975_prop","E_AGE_post2003","E_EFFICIENCY_mean","E_EFFICIENCY_BAND_mean",
+  "E_Pred_Ener_Consump_m2_mean","E_Pot_Ener_Consump_m2_mean","E_Pred_Ener_Consump_tot_med",
+  "E_Pred_Ener_Consump_tot_mean","E_Pot_Ener_Consump_tot_mean","E_TYPE_TOPFLOORFLAT_prop",
+  "E_TRANS_TYPE_OTHER_prop","E_TRANS_TYPE_GOVDEAL_prop","E_CROWDING","E_PHOTO_SUPPLY_mean",
+  "C_DomProp_num","C_DomGasMeter_num","C_OffGrid_num","C_OffGrid_prop","C_Residents_tot",
+  "C_ALL_HOUSEHOLDS_tot","C_ALL_RESIDENTS_tot","C_USUAL_ADULT_RESIDENTS_tot","C_EMPLOYED_tot",
+  "C_AGE_UNDER19_prop","C_AGE_20_64_prop","C_AGE_65PLUS_prop","C_CENSUS_DEPRIVATION_EW",
+  "C_DISABLED_prop","C_ECON_EMPLOYED_prop","C_ECON_UNEMP_prop","C_ECON_STUD_prop","C_ECON_RETIRED_prop",
+  "C_ECON_CARER_prop","C_ECON_SICK_prop","C_ECON_OTHER_prop","C_ETHNIC_ASIAN_prop","C_ETHNIC_BLACK_prop",
+  "C_ETHNIC_MIXED_prop","C_ETHNIC_WHITE_prop","C_ETHNIC_WHITEOTH_prop","C_HHCOMP_SINGLE_prop",
+  "C_OVER_OCCUPIED_prop","C_UNDER_OCCUPIED_prop","C_POPDENSITY","C_SECONDHOMES","C_TENURE_OWNED",
+  "C_TENURE_OUTRIGHT","C_TENURE_MORTGAGE","C_TENURE_SOCRENT","C_TENURE_COUNCIL","C_TENURE_OTHERSOC",
+  "C_TENURE_PRIVRENT","C_WORKFROMHOME","C_WORKOFFSHORE","C_DEP_rank","C_DEP_percentile","C_DEP_decile",
+  "C_RurUrb_bin","C_DEP_quintile"
+)
+
+```
+
+
+```{r}
+plot_corr_matrix <- function(data, vars, title = "Correlation Matrix") {
+
+  library(dplyr)
+  library(ggcorrplot)
+
+  # 1️⃣ Subset selected variables
+  df <- data %>% select(all_of(vars))
+
+  # 2️⃣ Keep only numeric columns
+  df <- df %>% select(where(is.numeric))
+
+  # 3️⃣ Drop columns that are all NA or constant
+  df <- df %>%
+    select(where(~ !all(is.na(.)))) %>%
+    select(where(~ sd(., na.rm = TRUE) > 0))
+
+  # 4️⃣ Initialise empty correlation matrix
+  var_names <- colnames(df)
+  n <- length(var_names)
+
+  corr_mat <- matrix(
+    NA_real_,
+    nrow = n,
+    ncol = n,
+    dimnames = list(var_names, var_names)
+  )
+
+  # 5️⃣ Manual pairwise correlation
+  for (i in seq_len(n)) {
+    for (j in seq_len(n)) {
+
+      x <- df[[i]]
+      y <- df[[j]]
+
+      ok <- complete.cases(x, y)
+
+      if (sum(ok) >= 3 &&
+          sd(x[ok]) > 0 &&
+          sd(y[ok]) > 0) {
+
+        corr_mat[i, j] <- cor(x[ok], y[ok])
+      }
+    }
+  }
+
+  # 6️⃣ Plot
+  ggcorrplot(
+    corr_mat,
+    hc.order = TRUE,
+    type = "lower",
+    lab = TRUE,
+    lab_size = 3,
+    colors = c("blue", "white", "red"),
+    title = title
+  )
+
+  # 7️⃣ Return matrix
+  return(corr_mat)
+}
+
+```
+
+```{r}
+my_vars <- c("D_GAP_normalised",
+  
+  "A_GasMeter_num","A_Gas_Consump_mean","A_ElecMeter_num","A_Elec_Consump_mean"
+)
+
+# Call the function
+plot_corr_matrix(data, my_vars, title = "GroupA")
+```
+
+
+```{r}
+my_vars <- c("D_GAP_normalised",
+  
+  "A_GasMeter_num","A_Gas_Consump_mean","A_ElecMeter_num","A_Elec_Consump_mean"
+)
+plot_corr_matrix(data, my_vars, title = "GroupA")
+```
+
+
+```{r}
+```
+
+```{r}
+my_vars <- c( "D_GAP_normalised",
+  "A_GasMeter_num","A_Gas_Consump_mean","A_GasNonMeter_num","A_ElecMeter_num","A_Elec_Consump_mean",
+  "D_Pred_Rank_Ener_m2_mean","D_EPC_vs_Census_prop","D_Gas_Elec_Meter_ratio","D_Act_Ener_Consump_mean",
+  "D_Act_Gas_Consump_m2_mean","D_Act_Elec_Consump_m2_mean","D_Act_Ener_Consump_m2_mean","D_Act_Rank_Gas_m2",
+  "D_Act_Rank_Elec_m2","D_Act_Rank_Ener_m2_averaged","D_Act_Rank_Ener_m2",
+  "E_SOLID_FUEL_HIGH","E_PropAge_modal","E_FloorArea_mean","E_EPC_num","E_MULTI_GLAZE_PROP_mean",
+  "E_EXTENSION_COUNT_mean","E_PHOTO_SUPPLY_prop","E_ROOF_INSULATION_prop","E_THATCHED_prop",
+  "E_OpenFire_mean","E_OpenFire_prop","E_HEAT_MAIN_ELECTRIC_prop","E_HEAT_MAIN_SOLIDFUEL_prop",
+  "E_HEAT_MAIN_OTHER_prop","E_HEAT_MAIN_ELECTRIC_OTHER_prop","E_HEAT_MAIN_ELECTRIC_SOLID_prop",
+  "E_HEAT_MAIN_SOLID_OTHER_prop","E_HEAT_MAIN_HEATPUMP_prop","E_HEAT_2ND_ELECTRIC_prop",
+  "E_HEAT_2ND_SOLIDFUEL_prop","E_HEAT_2ND_OTHER_prop","E_HEAT_2ND_ELECTRIC_OTHER_prop",
+  "E_HEAT_2ND_ELECTRIC_SOLID_prop","E_HEAT_2ND_SOLID_OTHER_prop","E_HEAT_2ND_HEATPUMP_prop",
+  "E_MAINS_GAS_prop","E_AGE_mean","E_TENURE_OWNED_prop","E_TENURE_PRIVRENT_prop","E_TENURE_SOCRENT_prop",
+  "E_TYPE_DETACHED_prop","E_TYPE_ENDTERRACE_prop","E_TYPE_MIDTERRACE_prop","E_TYPE_SEMI_prop",
+  "E_TYPE_BUNGALOW_prop","E_TYPE_FLAT_prop","E_TYPE_HOUSE_prop","E_TYPE_MAISONETTE_prop",
+  "E_TYPE_PARKHOME_prop","E_AGE_1976_2002_prop","E_AGE_1930_1949_prop","E_AGE_pre1929_prop",
+  "E_AGE_1950_1975_prop","E_AGE_post2003","E_EFFICIENCY_mean","E_EFFICIENCY_BAND_mean",
+  "E_Pred_Ener_Consump_m2_mean","E_Pot_Ener_Consump_m2_mean","E_Pred_Ener_Consump_tot_med",
+  "E_Pred_Ener_Consump_tot_mean","E_Pot_Ener_Consump_tot_mean","E_TYPE_TOPFLOORFLAT_prop",
+  "E_TRANS_TYPE_OTHER_prop","E_TRANS_TYPE_GOVDEAL_prop","E_CROWDING","E_PHOTO_SUPPLY_mean",
+  "C_DomProp_num","C_DomGasMeter_num","C_OffGrid_num","C_OffGrid_prop","C_Residents_tot",
+  "C_ALL_HOUSEHOLDS_tot","C_ALL_RESIDENTS_tot","C_USUAL_ADULT_RESIDENTS_tot","C_EMPLOYED_tot",
+  "C_AGE_UNDER19_prop","C_AGE_20_64_prop","C_AGE_65PLUS_prop","C_CENSUS_DEPRIVATION_EW",
+  "C_DISABLED_prop","C_ECON_EMPLOYED_prop","C_ECON_UNEMP_prop","C_ECON_STUD_prop","C_ECON_RETIRED_prop",
+  "C_ECON_CARER_prop","C_ECON_SICK_prop","C_ECON_OTHER_prop","C_ETHNIC_ASIAN_prop","C_ETHNIC_BLACK_prop",
+  "C_ETHNIC_MIXED_prop","C_ETHNIC_WHITE_prop","C_ETHNIC_WHITEOTH_prop","C_HHCOMP_SINGLE_prop",
+  "C_OVER_OCCUPIED_prop","C_UNDER_OCCUPIED_prop","C_POPDENSITY","C_SECONDHOMES","C_TENURE_OWNED",
+  "C_TENURE_OUTRIGHT","C_TENURE_MORTGAGE","C_TENURE_SOCRENT","C_TENURE_COUNCIL","C_TENURE_OTHERSOC",
+  "C_TENURE_PRIVRENT","C_WORKFROMHOME","C_WORKOFFSHORE","C_DEP_rank","C_DEP_percentile","C_DEP_decile","C_DEP_quintile"
+)
+
+# Call the function
+plot_corr_matrix(data, my_vars, title = "GroupC")
+
+```
+```{r}
+corr_mat <- plot_corr_matrix(data, my_vars)
+
+corr_df_wide <- as.data.frame(corr_mat)
+
+write.csv(
+  corr_df_wide,
+  "correlation_matrix_wide.csv",
+  row.names = TRUE
+)
+```
+
+```{r}
+# Subset the selected variables
+df_selected <- data[, my_vars]
+
+# Check for NAs
+na_summary <- sapply(df_selected, function(x) sum(is.na(x)))
+
+# Print summary
+na_summary
+```
+
+```{r}
+df_num <- df_selected  # assuming already numeric
+
+diag <- data.frame(
+  variable = names(df_num),
+  n_non_na = colSums(!is.na(df_num)),
+  sd = sapply(df_num, sd, na.rm = TRUE)
+)
+
+diag
+```
+
+
+```{r}
+plot(LSOA["C_RurUrb_bin"])
+```
+
+
+
+
+```{r}
+age_levels <- c(
+  "before_1929",
+  "1930-1949",
+  "1950-1975",
+  "1976-2002",
+  "2003_onwards"
+)
+
+# Reorder the factor in the dataset
+LSOA$E_PropAge_modal <- factor(
+  LSOA$E_PropAge_modal,
+  levels = age_levels,
+  ordered = TRUE
+)
+
+```
+
+```{r}
+vars <- c(
+  "D_GAP_normalised"
+)
+
+for (i in vars) {
+  p <- ggplot(
+    LSOA,
+    aes(
+      x = E_FloorArea_mean,
+      y = .data[[i]],
+      color = C_RurUrb_bin
+    )
+  ) +
+    geom_point(size = 0.6, alpha = 0.4) +
+    geom_smooth(method = "lm", se = FALSE, aes(group = C_RurUrb_bin)) +
+    scale_color_brewer(palette = "PuRd") +
+    labs(
+      title = paste("Floor area vs", i),
+      x = "Mean floor area (m²)",
+      y = i,
+      color = "Rural / Urban"
+    ) +
+    theme_minimal()
+  
+  print(p)
+}
+
+
+```
+
+```{r}
+vars <- c(
+  "D_GAP_normalised"
+)
+
+for (i in vars) {
+  p <- ggplot(
+    LSOA,
+    aes(
+      x = E_FloorArea_mean,
+      y = .data[[i]],
+      color = factor(C_DEP_quintile)
+    )
+  ) +
+    geom_point(size = 0.6, alpha = 0.4) +
+    geom_smooth(method = "lm", se = FALSE, aes(group = C_DEP_quintile)) +
+    scale_color_brewer(palette = "PuRd") +
+    labs(
+      title = paste("Floor area vs", i),
+      x = "Mean floor area (m²)",
+      y = i,
+      color = "Deprivation quintile"
+    ) +
+    theme_minimal()
+  
+  print(p)
+}
+
+```
+
+```{r}
+vars <- c(
+  "D_GAP_normalised"
+)
+
+for (i in vars) {
+  p <- ggplot(
+    LSOA,
+    aes(
+      x = E_FloorArea_mean,
+      y = .data[[i]],
+      color = C_OffGrid_prop  # continuous variable
+    )
+  ) +
+    geom_point(size = 0.8, alpha = 0.8) +
+    scale_color_gradient(low = "lightpink", high = "darkred") +
+    labs(
+      title = paste("Floor area vs", i),
+      x = "Mean floor area (m²)",
+      y = i,
+      color = "Off-grid proportion (%)"
+    ) +
+    theme_minimal()
+  
+  print(p)
+}
+
+```
+
+```{r}
+vars <- c(
+  "D_GAP_normalised"
+)
+
+for (i in vars) {
+  p <- ggplot(
+    LSOA,
+    aes(
+      x = E_FloorArea_mean,
+      y = .data[[i]],
+      color = factor(E_PropAge_modal)
+    )
+  ) +
+    geom_point(size = 0.6, alpha = 0.6) +
+    geom_smooth(method = "lm", se = FALSE, aes(group = factor(E_PropAge_modal), linetype = factor(E_PropAge_modal))) +
+    scale_color_brewer(palette = "PuRd") +
+    labs(
+      title = paste("Floor area vs", i),
+      x = "Mean floor area (m²)",
+      y = i,
+      color = "Modal age of property"
+    ) +
+    theme_minimal()
+  
+  print(p)
+}
+
+```
+
+```{r}
+vars <- c(
+  "D_GAP_normalised"
+)
+
+for (i in vars) {
+  p <- ggplot(
+    LSOA,
+    aes(
+      x = E_FloorArea_mean,
+      y = .data[[i]],
+      color = C_AGE_65PLUS_prop  # continuous
+    )
+  ) +
+    geom_point(size = 0.6, alpha = 0.6) +
+    scale_color_gradient(low = "lightpink", high = "darkred") +
+    labs(
+      title = paste("Floor area vs", i),
+      x = "Mean floor area (m²)",
+      y = i,
+      color = "Proportion aged 65+"
+    ) +
+    theme_minimal()
+  
+  print(p)
+}
+
+```
+# Maps
+
+```{r}
+ggplot(LSOA) +
+  geom_sf(aes(fill = D_GAP_normalised), color = NA) +  # remove polygon borders
+  scale_fill_distiller(palette = "PuRd", direction = 1, na.value = "grey90") +
+  labs(title = "Energy Gap", fill = "E_gap") +
+  theme_minimal() +
+  theme(
+    plot.title = element_text(hjust = 0.5, size = 16),
+    legend.position = "right"
+  )
+```
+
+```{r}
+
+# ---- Find min, max, and define diverging midpoint ----
+vmin <- min(LSOA$D_GAP_normalised, na.rm = TRUE)
+vmax <- max(LSOA$D_GAP_normalised, na.rm = TRUE)
+vcenter <- 0  # diverging midpoint
+
+# ---- Create diverging color scale (pink → white → orange) ----
+pink_orange <- c("#d730b3", "#ffffff", "#fd8d3c")
+
+# ---- Plot ----
+ggplot(LSOA) +
+  geom_sf(aes(fill = D_GAP_normalised), color = NA) +
+  scale_fill_gradient2(
+    low = pink_orange[1],
+    mid = pink_orange[2],
+    high = pink_orange[3],
+    midpoint = vcenter,
+    limits = c(vmin, vmax),
+    na.value = "grey90",
+    name = "E_gap"
+  ) +
+  labs(title = "Energy Gap (Diverging Colors)") +
+  theme_minimal() +
+  theme(
+    plot.title = element_text(hjust = 0.5, size = 16),
+    axis.text = element_blank(),
+    axis.ticks = element_blank()
+  )
+```
+# Models
+
+```{r}
+
+formula1 <- D_GAP_normalised ~ C_OffGrid_prop + E_FloorArea_mean + COUNTRY + C_RurUrb_bin + C_DEP_rank + E_CROWDING + E_AGE_mean
+formula2 <- D_GAP_normalised ~ C_OffGrid_prop + log(E_FloorArea_mean) + COUNTRY + C_RurUrb_bin + C_DEP_rank + log(E_CROWDING) + E_AGE_mean
+formula3 <- D_GAP_normalised ~ C_OffGrid_prop + log(E_FloorArea_mean) + COUNTRY + C_RurUrb_bin + C_DEP_rank + log(E_CROWDING) + E_AGE_mean + log(E_FloorArea_mean)*E_AGE_mean
+
+formula4 <- D_GAP_normalised ~ C_OffGrid_prop + log(E_FloorArea_mean) + COUNTRY + C_RurUrb_bin + C_DEP_rank + log(E_CROWDING) + E_AGE_mean + C_OffGrid_prop*E_EFFICIENCY_mean
+
+
+model1 <- glm(formula = formula1,data = LSOA,       family = gaussian() )
+model2 <- glm(formula = formula2,data = LSOA,       family = gaussian() )
+model3 <- glm(formula = formula3,data = LSOA,       family = gaussian() )
+model4 <- glm(formula = formula4,data = LSOA,       family = gaussian() )
+
+
+```
+
+```{r}
+plot(
+  fitted(model1),
+  residuals(model1, type = "pearson"),
+  xlab = "Fitted values",
+  ylab = "Pearson residuals",
+  main = "Residuals vs Fitted"
+)
+
+abline(h = 0, col = "red", lwd = 2)
+
+plot(
+  fitted(model2),
+  residuals(model1, type = "pearson"),
+  xlab = "Fitted values",
+  ylab = "Pearson residuals",
+  main = "Residuals vs Fitted"
+)
+
+abline(h = 0, col = "red", lwd = 2)
+
+plot(
+  fitted(model3),
+  residuals(model1, type = "pearson"),
+  xlab = "Fitted values",
+  ylab = "Pearson residuals",
+  main = "Residuals vs Fitted"
+)
+
+abline(h = 0, col = "red", lwd = 2)
+
+plot(
+  fitted(model4),
+  residuals(model1, type = "pearson"),
+  xlab = "Fitted values",
+  ylab = "Pearson residuals",
+  main = "Residuals vs Fitted"
+)
+
+abline(h = 0, col = "red", lwd = 2)
+```
+```{r}
+
+ggplot(LSOA, aes(x = C_OffGrid_prop, y = D_GAP_normalised)) +
+  geom_point(alpha = 0.4) +
+  geom_smooth(method = "loess", se = FALSE, color = "blue") +
+  labs(
+    title = "D_GAP_normalised vs C_OffGrid_prop",
+    x = "C_OffGrid_prop",
+    y = "D_GAP_normalised"
+  ) +
+  theme_minimal()
+
+ggplot(LSOA, aes(x = log(E_FloorArea_mean), y = D_GAP_normalised)) +
+  geom_point(alpha = 0.4) +
+  geom_smooth(method = "loess", se = FALSE, color = "blue") +
+  labs(
+    title = "D_GAP_normalised vs E_FloorArea_mean",
+    x = "E_FloorArea_mean",
+    y = "D_GAP_normalised"
+  ) +
+  theme_minimal()
+
+ggplot(LSOA, aes(x = COUNTRY, y = D_GAP_normalised)) +
+  geom_boxplot(alpha = 0.7) +
+  labs(
+    title = "D_GAP_normalised by COUNTRY",
+    x = "COUNTRY",
+    y = "D_GAP_normalised"
+  ) +
+  theme_minimal() +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1))
+
+ggplot(LSOA, aes(x = C_RurUrb_bin, y = D_GAP_normalised)) +
+  geom_boxplot(alpha = 0.7) +
+  labs(
+    title = "D_GAP_normalised by COUNTRY",
+    x = "C_RurUrb_bin",
+    y = "D_GAP_normalised"
+  ) +
+  theme_minimal() +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1))
+
+ggplot(LSOA, aes(x = C_DEP_rank, y = D_GAP_normalised)) +
+  geom_point(alpha = 0.4) +
+  geom_smooth(method = "loess", se = FALSE, color = "blue") +
+  labs(
+    title = "D_GAP_normalised vs C_DEP_rank",
+    x = "C_DEP_rank",
+    y = "D_GAP_normalised"
+  ) +
+  theme_minimal()
+
+ggplot(LSOA, aes(x = log(E_CROWDING), y = D_GAP_normalised)) +
+  geom_point(alpha = 0.4) +
+  geom_smooth(method = "loess", se = FALSE, color = "blue") +
+  labs(
+    title = "D_GAP_normalised vs E_CROWDING",
+    x = "E_CROWDING",
+    y = "D_GAP_normalised"
+  ) +
+  theme_minimal()
+
+ggplot(LSOA, aes(x = E_AGE_mean, y = D_GAP_normalised)) +
+  geom_point(alpha = 0.4) +
+  geom_smooth(method = "loess", se = FALSE, color = "blue") +
+  labs(
+    title = "D_GAP_normalised vs E_AGE_mean",
+    x = "E_AGE_mean",
+    y = "D_GAP_normalised"
+  ) +
+  theme_minimal()
+
+ ggplot(LSOA, aes(x = E_EFFICIENCY_mean, y = D_GAP_normalised)) +
+  geom_point(alpha = 0.4) +
+  geom_smooth(method = "loess", se = FALSE, color = "blue") +
+  labs(
+    title = "D_GAP_normalised vs E_EFFICIENCY_mean",
+    x = "E_EFFICIENCY_mean",
+    y = "D_GAP_normalised"
+  ) +
+  theme_minimal()
+
+```
+
+```{r}
+# R-squared for Gaussian GLM (equivalent to OLS R²)
+r2_glm <- function(model) {
+  y <- model$y
+  y_hat <- fitted(model)
+  1 - sum((y - y_hat)^2) / sum((y - mean(y))^2)
+}
+
+# RMSE
+rmse_glm <- function(model) {
+  sqrt(mean(residuals(model)^2))
+}
+
+model_metrics <- function(model, name) {
+  data.frame(
+    model = name,
+    R2 = r2_glm(model),
+    AIC = AIC(model),
+    RMSE = rmse_glm(model)
+  )
+}
+
+```
+
+```{r}
+model_metrics <- function(model, name) {
+  data.frame(
+    model = name,
+    R2 = r2_glm(model),
+    AIC = AIC(model),
+    RMSE = rmse_glm(model)
+  )
+}
+
+results_table <- rbind(
+  model_metrics(model1, "Model 1"),
+  model_metrics(model2, "Model 2"),
+  model_metrics(model3, "Model 3"),
+  model_metrics(model4, "Model 4")
+)
+
+results_table %>%
+  arrange(AIC)
+
+```
+
+```{r}
+summary(model4)
+```
+```{r}
+LSOA$resid_model1 <- NA_real_
+LSOA$resid_model1_abs <- NA_real_
+resid <- residuals(model4, type = "pearson")
+used_rows <- as.numeric(rownames(model.frame(model4)))
+LSOA$resid_model1[used_rows] <- resid
+LSOA$resid_model1_abs[used_rows] <- abs(resid)
+```
+
+```{r}
+plot(LSOA["resid_model1_abs"],border = "transparent")
+```
+
+
+```{r}
+plot(LSOA["resid_model1"],border = "transparent")
+```
+
